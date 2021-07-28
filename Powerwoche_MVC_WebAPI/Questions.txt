@@ -1,0 +1,5 @@
+Q&A:
+
+- KeyCloak in Verbindung mit ASP.NET MVC / WEBAPI? 
+- Autofac in ASP.NET Core 5 (MVC)
+- Verteilte Anwendungen -> Spicherverwaltung (IOC Container)

@@ -1,10 +1,10 @@
 ﻿TAG1:
-- [ ] Einführungs DI 
-- [ ] Dependency Injection / Seperation of Concerne (3 Stunden) 
-- [ ] Startup-Klasse
-- [ ] IServiceCollection / ServiceProvider
-- [ ] Konfigurationen einlesen
-- [ ] DI-SDependencyInjectionSamplepecials -> Mocks, Entwickler - Prozess
+- [x] Einführungs DI 
+- [x] Dependency Injection / Seperation of Concerne (3 Stunden) 
+- [x] Startup-Klasse
+- [x] IServiceCollection / ServiceProvider
+- [x] Konfigurationen einlesen
+- [x] DI-SDependencyInjectionSamplepecials -> Mocks, Entwickler - Prozess
 - [ ] Präsentationsschicht (1 Stunde) 
 - [ ] Razor-Syntax / RazorEngine 
 - [ ] MVC
