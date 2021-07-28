@@ -1,0 +1,37 @@
+﻿@model ASPNETCOREMVC_RazorSamples.ViewModels.RegisseurStatVM
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MovieList[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MovieList[0].Desciption)
+
+
+            </th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Movie currentMovie in Model.MovieList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Desciption)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@Html.ActionLink("Gehe zu MovieTable", nameof(Index))
+@Html.ActionLink("Gehe zu HomeController", "Index", "Home")
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+

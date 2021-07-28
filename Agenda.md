@@ -3,17 +3,16 @@
 - [x] Dependency Injection / Seperation of Concerne (3 Stunden) 
 - [x] Startup-Klasse
 - [x] IServiceCollection / ServiceProvider
-- [x] Konfigurationen einlesen
+- [x] Konfigurationen einlesen -> Dependency Injcetion + Konfigurationen
 - [x] DI-SDependencyInjectionSamplepecials -> Mocks, Entwickler - Prozess
-- [ ] Präsentationsschicht (1 Stunde) 
-- [ ] Razor-Syntax / RazorEngine 
-- [ ] MVC
-- [ ] Einbinden einer HotReload Middleware
+- [x] Präsentationsschicht (1 Stunde) 
+- [x] Razor-Syntax / RazorEngine 
+- [x] MVC mit ViewModels
+- [x] Einbinden einer HotReload Middleware
+- [x] Logging 
 
 Tag2:
 
-Dependency Injcetion + Konfigurationen
-- [ ] Logging 
 Die Controller-Klasse (MVC)
 - [ ] Überblick über HTTPContext und Controller-Basisklasse
 - [ ] QueryString bei Get-Methoden

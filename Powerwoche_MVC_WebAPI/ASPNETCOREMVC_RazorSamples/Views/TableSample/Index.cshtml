@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ASPNETCOREMVC_RazorSamples.Models.Movie>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Desciption)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Movie currentMovie in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Desciption)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
