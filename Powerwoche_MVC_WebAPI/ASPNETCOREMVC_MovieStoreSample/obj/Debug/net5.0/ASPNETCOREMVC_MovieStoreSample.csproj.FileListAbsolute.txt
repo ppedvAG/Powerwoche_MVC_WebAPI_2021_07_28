@@ -155,3 +155,9 @@ C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETC
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\Shared\_SpecialOfferPartial.cshtml.g.cs
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\Photo\UploadPicture.cshtml.g.cs
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\Photo\PictureGallery.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\StateManagement\ViewDataSample.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\StateManagement\ViewBagSample.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempDataSample.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempDataSecondSample.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempDataThirdSample.cshtml.g.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCOREMVC_MovieStoreSample\obj\Debug\net5.0\Razor\Views\ShoppingPayment\ShoppingCartOverview.cshtml.g.cs

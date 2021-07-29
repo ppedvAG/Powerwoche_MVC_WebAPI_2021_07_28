@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "TempDataSecondSample";
+    ////string email = TempData["EmailAddress"].ToString();
+    ////int id = Convert.ToInt32(TempData["Id"]);
+    ////TempData.Keep();
+}
+
+<h1>TempDataSecondSample</h1>
+
+@*@email
+    <br />
+    @id*@
+
+@TempData.Peek("EmailAdress");<!-- Ausgabe + Variable bleibt für einen weiteren Zugriff erhalten-->
+@TempData.Peek("Id");

@@ -23,11 +23,12 @@ Die Controller-Klasse (MVC)
 - [x] Data Annotations 
 - [x] Validierung 
 - [x] Gehen Geldbeträge mit Komma?
-- [ ] Upload von Bilddateien + einfache Darstellung in einer Gallery
+- [x] Upload von Bilddateien + einfache Darstellung in einer Gallery
+
 State-Management
-- [ ] ViewData////
-- [ ] ViewBag
-- [ ] TempData
+- [x] ViewData////
+- [x] ViewBag
+- [x] TempData
 - [ ] Session-Handling -> Bauen einen Warenkorb (mit Artikel entfernen)
 
 Weitere Views

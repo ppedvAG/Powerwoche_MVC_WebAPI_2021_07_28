@@ -1,10 +1,12 @@
 ﻿using ASPNETCOREMVC_MovieStoreSample.Data;
 using ASPNETCOREMVC_MovieStoreSample.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ASPNETCOREMVC_MovieStoreSample.Controllers
@@ -75,12 +77,36 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Buy(int? Id)
+        public IActionResult Buy(int? Id)
         {
             if (!Id.HasValue)
                 return BadRequest();
 
+
             //Hier kommt noch Logik dazu
+            if (HttpContext.Session.IsAvailable)
+            {
+                List<int> idList = new List<int>();
+
+                if (HttpContext.Session.Keys.Contains("ShoppingCart"))
+                {
+                    //Wenn ja, wurde schon einmal was gekauft und der Session-Eintrag exisitiert
+                    string jsonIdList = HttpContext.Session.GetString("ShoppingCart");
+
+                    //befüllte idList mit existierenden Einkäufe
+                    idList = JsonSerializer.Deserialize<List<int>>(jsonIdList);
+                }
+
+
+                idList.Add(Id.Value);
+
+                string jsonString = JsonSerializer.Serialize(idList);
+
+                HttpContext.Session.SetString("ShoppingCart", jsonString);
+
+            }
+            
+            
             return RedirectToAction(nameof(Index));
         }
 

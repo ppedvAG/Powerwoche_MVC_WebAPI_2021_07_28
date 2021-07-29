@@ -33,6 +33,8 @@ namespace ASPNETCOREMVC_MovieStoreSample
                 options.UseSqlServer(Configuration.GetConnectionString("MovieStoreDB"));
             });
 
+            services.AddSession();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,12 +56,9 @@ namespace ASPNETCOREMVC_MovieStoreSample
             app.UseRouting();
 
             app.UseAuthorization();
-
-
-
+            app.UseSession();
 
             AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
-
 
             app.UseEndpoints(endpoints =>
             {
