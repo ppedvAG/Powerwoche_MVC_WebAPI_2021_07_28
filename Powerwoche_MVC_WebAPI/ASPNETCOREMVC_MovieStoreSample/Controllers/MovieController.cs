@@ -19,9 +19,18 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string query)
         {
-            return View(await _context.Movies.ToListAsync());
+            if (!string.IsNullOrEmpty(query))
+            {
+                ViewData["FilterQuery"] = query;
+            }
+
+            IList<Movie> filteredList = string.IsNullOrEmpty(query) ?
+                await _context.Movies.ToListAsync() :
+                await _context.Movies.Where(q => q.Title.Contains(query)).ToListAsync();
+
+            return View(filteredList);
         }
 
         [HttpGet]
@@ -54,6 +63,18 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
 
 
             return View(currentMovie);
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Buy(int? Id)
+        {
+            if (!Id.HasValue)
+                return BadRequest();
+
+            //Hier kommt noch Logik dazu
+            return RedirectToAction(nameof(Index));
         }
 
     }

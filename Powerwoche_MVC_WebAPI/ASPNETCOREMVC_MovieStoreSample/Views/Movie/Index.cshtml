@@ -2,42 +2,59 @@
 
 @{
     ViewData["Title"] = "Index";
+
+    string searchQuery = string.Empty;
+
+    if (ViewData["FilterQuery"] == null)
+        searchQuery = string.Empty;
+    else
+        searchQuery = ViewData["FilterQuery"].ToString();
 }
 
 <h1>Index</h1>
+
+<form asp-controller="Movie" asp-action="Index" method="get">
+    <p>Title: <input type="text" name="query" value='@searchQuery' /> </p>
+    <input type="submit" value="Filter" />
+</form>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
 
+<form asp-controller="Movie" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Desciption)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Desciption)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Desciption)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Desciption)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                        <button asp-action="Wish" asp-route-id="@item.Id">Wish</button>
+                        <button asp-action="Buy" asp-route-id="@item.Id">Buy</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
