@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "PictureGallery";
+}
+
+<h1>PictureGallery</h1>
+
+@foreach(string currentPicPath in Model)
+{
+    <div class="col-12 col-md-4">
+        <img class="img-fluid" src="~/images/@System.IO.Path.GetFileName(currentPicPath)" />
+    </div>
+}

@@ -5,6 +5,14 @@
 
 <a href="https://docs.microsoft.com/de-de/aspnet/core/mvc/views/razor?view=aspnetcore-5.0">Weiter zum Orginal Beispiel</a>
 
+<partial name="_ZeitPartial" />
+
+@Html.Partial("_ZeitPartial"); <!-- HTML Helper-->
+
+@await Html.PartialAsync("_ZeitPartial");
+
+@Context.
+
 @* 1.) Einfache Ausgabe *@
 <p>Anzahl der Datensätze: @Model.Count()</p>
 
@@ -158,7 +166,7 @@ else
     {
           new Person("Weston", 33),
           new Person("Johnathon", 41),
-                                                                                            }; };
+                                                                                                            }; };
 }
 
 

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASPNETCOREMVC_MovieStoreSample.Controllers;
 
 namespace ASPNETCOREMVC_MovieStoreSample.Data
 {
@@ -15,7 +16,5 @@ namespace ASPNETCOREMVC_MovieStoreSample.Data
         }
 
         public DbSet<Movie> Movies { get; set; }
-
-        public DbSet<MovieSales> MovieSales { get; set; }
     }
 }

@@ -15,14 +15,15 @@ Tag2:
 
 Die Controller-Klasse (MVC)
 - [ ] Überblick über HTTPContext und Controller-Basisklasse
-- [ ] QueryString bei Get-Methoden
-- [ ] Ein Formular mit mehren Buttons (Post-Methoden)
-- [ ] HTML-Helper
-- [ ] TagHelpers
-- [ ] Data Annotations 
-- [ ] Validierung 
-- [ ] Gehen Geldbeträge mit Komma?
-
+- [x] QueryString bei Get-Methoden
+- [x] Ein Formular mit mehren Buttons (Post-Methoden)
+- [x] PartialView
+- [x] HTML-Helper
+- [x] TagHelpers
+- [x] Data Annotations 
+- [x] Validierung 
+- [x] Gehen Geldbeträge mit Komma?
+- [ ] Upload von Bilddateien + einfache Darstellung in einer Gallery
 State-Management
 - [ ] ViewData////
 - [ ] ViewBag
@@ -30,7 +31,7 @@ State-Management
 - [ ] Session-Handling -> Bauen einen Warenkorb (mit Artikel entfernen)
 
 Weitere Views
-- [ ] PartialView
+
 - [ ] ViewComponents & Localization -> Referenz Projekte anschauen
 - [ ] Identity UI in ASP.NET Core MVC -> weitere UseCases zu PartialView
 
@@ -44,9 +45,9 @@ Weitere Views
 - [ ] AuthorisationFilter Sample (Read and Write Sample)
 
 - [ ] EF Core Einstieg 
-  - [ ] Code First / Code First Reverse
+  - [o] Code First / Code First Reverse
   - [ ] Repository / UnitOfWork Pattern in EF
-  - [ ] Add-Migration + Update-Database im Bezug auf eine DBContext 
+  - [x] Add-Migration + Update-Database im Bezug auf eine DBContext 
 
 
 WebAPI:

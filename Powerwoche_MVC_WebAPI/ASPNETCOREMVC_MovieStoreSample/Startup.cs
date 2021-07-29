@@ -55,6 +55,12 @@ namespace ASPNETCOREMVC_MovieStoreSample
 
             app.UseAuthorization();
 
+
+
+
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

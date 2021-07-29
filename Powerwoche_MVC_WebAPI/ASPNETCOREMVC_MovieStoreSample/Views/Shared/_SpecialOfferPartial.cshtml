@@ -1,0 +1,25 @@
+﻿@model IEnumerable<ASPNETCOREMVC_MovieStoreSample.Models.Movie>
+
+@{ 
+    Movie movieWithLowestPrice = null;
+
+    if (Model.Any())
+    {
+        movieWithLowestPrice = Model.OrderBy(o => o.Preis).First();
+    }
+}
+
+@if (movieWithLowestPrice != null)
+{
+    <p>Sonderangebot</p>
+    <div class="card" style="background-color: darkorange">
+        <div class="card-body">
+            <p>@movieWithLowestPrice.Title</p>
+            <p>@movieWithLowestPrice.Preis</p>
+        </div>
+    </div>
+}
+else
+{
+    <p>Aktuell kein Sonderangebot. Entweder wird der Filter verwendet oder es gibt keine Movies in der DB</p>
+}

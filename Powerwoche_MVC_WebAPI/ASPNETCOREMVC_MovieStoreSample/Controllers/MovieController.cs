@@ -33,6 +33,7 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
             return View(filteredList);
         }
 
+
         [HttpGet]
         public IActionResult Create()
         {
@@ -43,7 +44,13 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
          [AutoValidateAntiforgeryToken]
          public async Task<IActionResult> Create(Movie movie)
          {
-            if (ModelState.IsValid)
+
+            if (movie.Title == "Basic Instinkt")
+            {
+                ModelState.AddModelError("Title", "Achtung vor Sharon!");
+            }
+
+            if (ModelState.IsValid) //Serverseitige Validierung
             {
                 _context.Movies.Add(movie);
                 await _context.SaveChangesAsync();
@@ -77,5 +84,64 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
+        [HttpGet]
+        public IActionResult Sample1()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Sample1(string myText, int myNumber)
+        {
+            return RedirectToAction("Sample2", new { myText = myText, myNumber = myNumber });
+        }
+
+        public IActionResult Sample2 (string myText, int myNumber)
+        {
+            MyLinkValues values = new();
+
+            values.Name = myText;
+            values.Zahl = myNumber;
+
+            return View(values);
+        }
+
+        public IActionResult Sample3()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RegisterAny(string myText, int MyNumber)
+        {
+
+            //Füge deine Logik ein!!!
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public IActionResult DoAnything(string myText, int MyNumber)
+        {
+            //Füge deine Logik ein!!!
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Sample3(string myText, int myNumber) //Parametervarialen müssen den selbe Benennung aufweisen, wie in  <input>-Tag - Attribut Name: 
+        {
+
+            return RedirectToAction("Sample2", new { myText = myText, myNumber = myNumber });
+        }
+
+    }
+
+    public class MyLinkValues // Modelklasse
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Zahl { get; set; }
     }
 }

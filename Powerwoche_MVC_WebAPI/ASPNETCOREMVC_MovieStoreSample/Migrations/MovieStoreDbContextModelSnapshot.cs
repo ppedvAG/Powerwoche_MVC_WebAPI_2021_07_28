@@ -18,6 +18,24 @@ namespace ASPNETCOREMVC_MovieStoreSample.Migrations
                 .HasAnnotation("ProductVersion", "5.0.8")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("ASPNETCOREMVC_MovieStoreSample.Controllers.MyLinkValues", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Zahl")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MyLinkValues");
+                });
+
             modelBuilder.Entity("ASPNETCOREMVC_MovieStoreSample.Models.Movie", b =>
                 {
                     b.Property<int>("Id")
@@ -29,6 +47,9 @@ namespace ASPNETCOREMVC_MovieStoreSample.Migrations
                         .HasMaxLength(75)
                         .HasColumnType("nvarchar(75)");
 
+                    b.Property<decimal>("Preis")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -36,45 +57,6 @@ namespace ASPNETCOREMVC_MovieStoreSample.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Movies");
-                });
-
-            modelBuilder.Entity("ASPNETCOREMVC_MovieStoreSample.Models.MovieSales", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Media")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MovieId");
-
-                    b.ToTable("MovieSales");
-                });
-
-            modelBuilder.Entity("ASPNETCOREMVC_MovieStoreSample.Models.MovieSales", b =>
-                {
-                    b.HasOne("ASPNETCOREMVC_MovieStoreSample.Models.Movie", "Movie")
-                        .WithMany("MovieSales")
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Movie");
-                });
-
-            modelBuilder.Entity("ASPNETCOREMVC_MovieStoreSample.Models.Movie", b =>
-                {
-                    b.Navigation("MovieSales");
                 });
 #pragma warning restore 612, 618
         }

@@ -16,5 +16,18 @@ namespace ASPNETCOREMVC_RazorSamples.Controllers
             myPersons.Add(new Person("Moritz", 34));
             return View(myPersons.ToArray());
         }
+
+
+        public IActionResult TagHelperSample()
+        {
+            return View();
+        }
+
+        public IActionResult CustomizeTagHelperSample()
+        {
+            return View();
+        }
+
+
     }
 }

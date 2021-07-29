@@ -10,12 +10,12 @@ namespace ASPNETCOREMVC_MovieStoreSample.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required (AllowEmptyStrings = false, ErrorMessage = "Bitte geben einen Titel ein")]
         public string Title { get; set; }
 
-        [MaxLength(75)]
+        [MaxLength(75, ErrorMessage = "Max 75 Zeichen")]
         public string Desciption { get; set; }
 
-        public ICollection<MovieSales> MovieSales { get; set; }
+       public decimal Preis { get; set; }
     }
 }

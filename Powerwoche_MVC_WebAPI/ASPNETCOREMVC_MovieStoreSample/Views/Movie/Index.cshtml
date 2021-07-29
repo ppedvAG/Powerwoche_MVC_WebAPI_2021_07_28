@@ -13,6 +13,8 @@
 
 <h1>Index</h1>
 
+<partial name="_SpecialOfferPartial" />
+
 <form asp-controller="Movie" asp-action="Index" method="get">
     <p>Title: <input type="text" name="query" value='@searchQuery' /> </p>
     <input type="submit" value="Filter" />
@@ -32,28 +34,34 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Desciption)
                 </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Preis)
+                </th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Desciption)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Desciption)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preis)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
 
-                        <button asp-action="Wish" asp-route-id="@item.Id">Wish</button>
-                        <button asp-action="Buy" asp-route-id="@item.Id">Buy</button>
-                    </td>
-                </tr>
+                    <button asp-action="Wish" asp-route-id="@item.Id">Wish</button>
+                    <button asp-action="Buy" asp-route-id="@item.Id">Buy</button>
+                </td>
+            </tr>
             }
         </tbody>
     </table>

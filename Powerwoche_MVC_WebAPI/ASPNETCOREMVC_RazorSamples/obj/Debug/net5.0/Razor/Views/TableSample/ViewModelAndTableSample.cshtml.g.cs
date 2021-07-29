@@ -27,7 +27,7 @@ using ASPNETCOREMVC_RazorSamples.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78e2bce132272155c903fa9f7ccc06ad92c8342c", @"/Views/TableSample/ViewModelAndTableSample.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"adca7af89a13aee98399aa528ac99a5edc7a3bd0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"db29d8d657bd24c282a36a6ce091d9943298de05", @"/Views/_ViewImports.cshtml")]
     public class Views_TableSample_ViewModelAndTableSample : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ASPNETCOREMVC_RazorSamples.ViewModels.RegisseurStatVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("nav-link text-dark"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
