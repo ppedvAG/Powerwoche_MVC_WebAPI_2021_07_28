@@ -2,12 +2,15 @@ using ASPNETCOREMVC_MovieStoreSample.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -25,7 +28,23 @@ namespace ASPNETCOREMVC_MovieStoreSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddMvc();
+            
+            /// <summary>
+            /// Adds MVC services to the specified <see cref="IServiceCollection" />.
+            /// </summary>
+            /// <param name="services">The <see cref="IServiceCollection" /> to add services to.</param>
+            /// <returns>An <see cref="IMvcBuilder"/> that can be used to further configure the MVC services.</returns>
+            //public static IMvcBuilder AddMvc(this IServiceCollection services)
+            //{
+            //    if (services == null)
+            //    {
+            //        throw new ArgumentNullException(nameof(services));
+            //    }
+
+            //    services.AddControllersWithViews();
+            //    return services.AddRazorPages();
+            //}
 
             services.AddDbContext<MovieStoreDbContext>(options =>
             {
@@ -33,7 +52,25 @@ namespace ASPNETCOREMVC_MovieStoreSample
                 options.UseSqlServer(Configuration.GetConnectionString("MovieStoreDB"));
             });
 
+            services.AddAuthentication();
+            
             services.AddSession();
+
+            services.AddLocalization();
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("en"),
+                     new CultureInfo("de"),
+                     new CultureInfo("fr")
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("de");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
 
         }
 
@@ -54,7 +91,9 @@ namespace ASPNETCOREMVC_MovieStoreSample
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseRequestLocalization(app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>().Value);
 
+            app.UseAuthentication(); //Steht vor Auth
             app.UseAuthorization();
             app.UseSession();
 
@@ -62,9 +101,18 @@ namespace ASPNETCOREMVC_MovieStoreSample
 
             app.UseEndpoints(endpoints =>
             {
+
+                endpoints.MapControllerRoute(
+                     name: "movie",
+                     pattern: "movie/{*movie}", defaults: new { controller = "Movie", action = "Index" });
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                //endpoints.MapDefaultControllerRoute(); -> beinhaltet die Default-Route 
+
+                endpoints.MapRazorPages();
             });
         }
     }

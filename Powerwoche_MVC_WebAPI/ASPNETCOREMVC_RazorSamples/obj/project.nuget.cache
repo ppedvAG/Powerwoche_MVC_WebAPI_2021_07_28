@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OgMt7ECZ5hNV2xqWLzvDQa1bLQpkpnkN8jpHKPgs9bHtuLZN/3gCfp7y13VJWYKMIOdEnx/GXqvFKDR3aFL8nw==",
+  "dgSpecHash": "z33GRsmydT4aP2I3BVqdn+FydZaBULpbAINV8MtefI55LTrPOZ3xcqk46/ZDamd1V5N+MB48YKdjdj6UO9Kxqw==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Powerwoche_MVC_WebAPI_2021_07_28\\Powerwoche_MVC_WebAPI\\ASPNETCOREMVC_RazorSamples\\ASPNETCOREMVC_RazorSamples.csproj",
   "expectedPackageFiles": [
@@ -111,7 +111,8 @@
     "C:\\Users\\kw4\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
   ],
   "logs": []
 }

@@ -82,5 +82,12 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
         }
 
 
+        [HttpGet]
+        public IActionResult Payment()
+        {
+            return View();
+        }
+
+
     }
 }

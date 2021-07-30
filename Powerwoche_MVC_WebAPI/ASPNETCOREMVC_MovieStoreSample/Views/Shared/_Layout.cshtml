@@ -32,12 +32,15 @@
                                Stammdaten
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" asp-controller="Regisseur" asp-action="Index">Regisseure</a>
+                                
                                 <a class="dropdown-item" asp-controller="Movie" asp-action="Index">Filme</a>
+                                <a class="dropdown-item" asp-controller="ShoppingPayment" asp-action="ShoppingCartOverview">Warenkorb</a>
                                 @*<a class="dropdown-item" asp-controller="Demo" asp-action="Sample3">Sample3</a>*@
                             </div>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial">
+                    <vc:culture-switcher />
                 </div>
             </div>
         </nav>

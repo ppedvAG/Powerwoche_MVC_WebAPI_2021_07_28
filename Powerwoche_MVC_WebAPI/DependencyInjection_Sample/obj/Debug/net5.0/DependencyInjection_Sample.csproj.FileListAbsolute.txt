@@ -9,3 +9,4 @@ C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\Depende
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\DependencyInjection_Sample\obj\Debug\net5.0\DependencyInjection_Sample.dll
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\DependencyInjection_Sample\obj\Debug\net5.0\ref\DependencyInjection_Sample.dll
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\DependencyInjection_Sample\obj\Debug\net5.0\DependencyInjection_Sample.pdb
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\DependencyInjection_Sample\obj\Debug\net5.0\DependencyInjection_Sample.csproj.AssemblyReference.cache

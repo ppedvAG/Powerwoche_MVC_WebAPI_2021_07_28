@@ -36,13 +36,13 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("/movie/create")]
         public IActionResult Create()
         {
             return View();
         }
 
-         [HttpPost]
+         [HttpPost("/movie/create")]
          [AutoValidateAntiforgeryToken]
          public async Task<IActionResult> Create(Movie movie)
          {
@@ -62,7 +62,7 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
             return View(movie);
          }
 
-        [HttpGet]
+        [HttpGet("/movie/details/{id}")]
         public async Task<IActionResult> Details(int? Id)
         {
             if (!Id.HasValue)
@@ -76,7 +76,7 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
 
 
 
-        [HttpPost]
+        [HttpPost("/movie/buy/{id}")]
         public IActionResult Buy(int? Id)
         {
             if (!Id.HasValue)
@@ -111,18 +111,18 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("/movie/Sample1")]
         public IActionResult Sample1()
         {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("/movie/Sample1")]
         public IActionResult Sample1(string myText, int myNumber)
         {
             return RedirectToAction("Sample2", new { myText = myText, myNumber = myNumber });
         }
-
+        [HttpGet("/movie/Sample2/{myText}/{myNumber}")]
         public IActionResult Sample2 (string myText, int myNumber)
         {
             MyLinkValues values = new();
@@ -133,6 +133,7 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
             return View(values);
         }
 
+        [HttpGet("/movie/Sample3")]
         public IActionResult Sample3()
         {
             return View();
