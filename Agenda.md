@@ -39,8 +39,8 @@ Weitere Views
 - Routing
 - [x] Konventionelles Routing
 - [x] Attribute Routing
-- [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
-- [ ] Customize Middleware für formatierte Bildausgaben (Gallery)+ In Verbindung mit einem Bild-Upload-Formular
+- [x] Middleware -> Was ist ein Pipeline (Use, Run, Map)
+- [x] Customize Middleware für formatierte Bildausgaben (Gallery)+ In Verbindung mit einem Bild-Upload-Formular
 
 - [ ] Filter -> https://docs.microsoft.com/de-de/aspnet/core/mvc/controllers/filters?view=aspnetcore-5.0#resource-filters
 - [ ] AuthorisationFilter Sample (Read and Write Sample)
