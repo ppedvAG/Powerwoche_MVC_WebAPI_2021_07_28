@@ -58,12 +58,12 @@ WebAPI:
 
 - [x] Projektaufbau 
   - [x] ControllerBase in aspnetcore Sourcecode
-- [ ] HTTP-Methoden (Get / Post / Put / Delete)
+- [x] HTTP-Methoden (Get / Post / Put / Delete)
 - [ ] HTTP-Patch Befehl manuell hinzufügen
-- [ ] HttpVerbs in Verbindung mit Swagger
+- [x] HttpVerbs in Verbindung mit Swagger
 - [ ] HttpClient
-- [ ] OpenAPI-SwaggerUI-swagger.json
-  - [ ] Koventionsprobleme mit Swagger.json und WebAPI-Konventionen
+- [x] OpenAPI-SwaggerUI-swagger.json
+  - [x] Koventionsprobleme mit Swagger.json und WebAPI-Konventionen
 - [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 - [ ] Formatter (CSV,XML)
 - [ ] Customize Formatter (VCARD)
