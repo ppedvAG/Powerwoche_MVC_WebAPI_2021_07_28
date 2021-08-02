@@ -1,0 +1,17 @@
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.exe
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.deps.json
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.runtimeconfig.dev.json
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\ref\WinFormsApp1.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\bin\Debug\net5.0-windows\WinFormsApp1.pdb
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.Form1.resources
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\ref\WinFormsApp1.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.pdb
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.genruntimeconfig.cache

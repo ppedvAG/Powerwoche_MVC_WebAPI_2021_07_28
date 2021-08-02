@@ -51,11 +51,15 @@ Weitere Views
   - [x] Add-Migration + Update-Database im Bezug auf eine DBContext 
 
 
+- Abschlus
+  - [x] ViewModels / Relation -> University-Beispiel
+
 WebAPI:
 
-- [ ] Projektaufbau 
-  - [ ] ControllerBase in aspnetcore Sourcecode
+- [x] Projektaufbau 
+  - [x] ControllerBase in aspnetcore Sourcecode
 - [ ] HTTP-Methoden (Get / Post / Put / Delete)
+- [ ] HTTP-Patch Befehl manuell hinzufügen
 - [ ] HttpVerbs in Verbindung mit Swagger
 - [ ] HttpClient
 - [ ] OpenAPI-SwaggerUI-swagger.json
@@ -70,7 +74,7 @@ WebAPI:
 - [ ] WebAPI + EFCore + MVC als Client
 - [ ] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
 - [ ] ODATA 8 (beta)  -> Beispiel Odata-Service Implementierung. 
-- [ ] Architekturen -> Hateoas + DataShapping + OData 
+- [ ] Architekturen -> Hateoas + DataShapping + OData + GraphQL
 
 
 
