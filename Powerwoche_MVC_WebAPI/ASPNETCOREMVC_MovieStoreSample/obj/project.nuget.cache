@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d19W2sw2VQF97F4NEFLhxUtkA0WwEhO1VQBGSj3F0S8Qjq+rycrXvwQEUvDuKqesYSGL36gK5wJMO5DxsGlnXQ==",
+  "dgSpecHash": "tlQ2rYvqt/UUP5SZf/WEL2JxQuz9e03Svo2nh7qTt27s3P+OxYEKEK+nFzDLXEYiUp09FT8OV+NYIMT0zQt1Xw==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Powerwoche_MVC_WebAPI_2021_07_28\\Powerwoche_MVC_WebAPI\\ASPNETCOREMVC_MovieStoreSample\\ASPNETCOREMVC_MovieStoreSample.csproj",
   "expectedPackageFiles": [
@@ -136,8 +136,7 @@
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
+    "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w6qs/hO5bjVzrc9DsJF8zkU0XVCavJiNiE2g1syR280FHW6/E9c6uq06cCozaAvxjDzNEfg3vvs0AsS2gFuaxw==",
+  "dgSpecHash": "62rGBApgeJzjdHgQqkcM250nmAJQBdp6gyVyPr2hJU6Pi8Qn/DcPF4kTe/q0nM6y/WxfeVPNP+BmdwWl0mo0eg==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Powerwoche_MVC_WebAPI_2021_07_28\\Powerwoche_MVC_WebAPI\\ASPNETCOREMVC_Intro\\ASPNETCOREMVC_Intro.csproj",
   "expectedPackageFiles": [
@@ -134,8 +134,7 @@
     "C:\\Users\\kw4\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\westwind.aspnetcore.livereload\\0.3.2\\westwind.aspnetcore.livereload.0.3.2.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.7\\microsoft.netcore.app.host.win-x64.5.0.7.nupkg.sha512"
+    "C:\\Users\\kw4\\.nuget\\packages\\westwind.aspnetcore.livereload\\0.3.2\\westwind.aspnetcore.livereload.0.3.2.nupkg.sha512"
   ],
   "logs": []
 }

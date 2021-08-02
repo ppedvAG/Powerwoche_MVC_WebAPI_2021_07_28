@@ -42,8 +42,8 @@ Weitere Views
 - [x] Middleware -> Was ist ein Pipeline (Use, Run, Map)
 - [x] Customize Middleware für formatierte Bildausgaben (Gallery)+ In Verbindung mit einem Bild-Upload-Formular
 
-- [ ] Filter -> https://docs.microsoft.com/de-de/aspnet/core/mvc/controllers/filters?view=aspnetcore-5.0#resource-filters
-- [ ] AuthorisationFilter Sample (Read and Write Sample)
+- [x] Filter -> https://docs.microsoft.com/de-de/aspnet/core/mvc/controllers/filters?view=aspnetcore-5.0#resource-filters
+- [x] AuthorisationFilter Sample (Read and Write Sample)
 
 - [x] EF Core Einstieg 
   - [o] Code First / Code First Reverse
@@ -61,7 +61,7 @@ WebAPI:
 - [ ] OpenAPI-SwaggerUI-swagger.json
   - [ ] Koventionsprobleme mit Swagger.json und WebAPI-Konventionen
 - [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
-- [ ] Formatter (BJSON, XML) ->XMLBug -> XMLFormatterSerializer nich global angeboten
+- [ ] Formatter (CSV,XML)
 - [ ] Customize Formatter (VCARD)
 - [ ] Migration von MVC & WebAPI von 4.8 auf ASP.NET Core
 - [ ] Content Negotation
