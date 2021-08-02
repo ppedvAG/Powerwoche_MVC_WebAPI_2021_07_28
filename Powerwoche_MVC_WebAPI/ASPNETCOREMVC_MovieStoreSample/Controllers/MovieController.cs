@@ -42,7 +42,13 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
             return View();
         }
 
-         [HttpPost("/movie/create")]
+        [HttpGet("/movie/create/{id?}")]
+        public IActionResult Create(int? id)
+        {
+            return View();
+        }
+
+        [HttpPost("/movie/create")]
          [AutoValidateAntiforgeryToken]
          public async Task<IActionResult> Create(Movie movie)
          {

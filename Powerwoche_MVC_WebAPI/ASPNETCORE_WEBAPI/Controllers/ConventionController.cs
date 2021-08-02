@@ -11,7 +11,7 @@ namespace ASPNETCORE_WEBAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Produces("application/json")]
     [ApiConventionType(typeof(DefaultApiConventions))]
     //Microsoft.AspNetCore.Mvc.ApiConventionTypeAttribute, auf einen Controller angewendet — Wendet den angegebenen Konventionstyp auf alle Controlleraktionen an.Eine Konventionsmethode ist mit Hinweisen markiert, mit denen die Aktionen bestimmt werden, für die die Konventionsmethode gilt.Weitere Informationen zu Hinweisen finden Sie unter Erstellen von Web-API-Konventionen).
     public class ConventionController : ControllerBase

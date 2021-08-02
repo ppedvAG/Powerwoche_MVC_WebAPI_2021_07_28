@@ -25,7 +25,7 @@ namespace ASPNETCOREMVC_MovieStoreSample.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            return RedirectToAction("Create", "Movie", new { id = 1 });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

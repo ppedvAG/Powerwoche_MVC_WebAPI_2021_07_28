@@ -12,6 +12,7 @@ namespace ASPNETCORE_WEBAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Produces("application/xml")]
     public class MovieController : ControllerBase
     {
         private readonly MovieDbContext _ctx;

@@ -32,3 +32,13 @@ C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETC
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\obj\Debug\net5.0\ASPNETCORE_WEBAPI.pdb
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\obj\Debug\net5.0\ASPNETCORE_WEBAPI.genruntimeconfig.cache
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\obj\Debug\net5.0\ASPNETCORE_WEBAPI.csproj.AssemblyReference.cache
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\WebApiContrib.Core.Formatter.Csv.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\protobuf-net.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\protobuf-net.Core.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\System.Private.ServiceModel.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\System.ServiceModel.Primitives.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\System.ServiceModel.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\WebApiContrib.Core.Formatter.Protobuf.dll

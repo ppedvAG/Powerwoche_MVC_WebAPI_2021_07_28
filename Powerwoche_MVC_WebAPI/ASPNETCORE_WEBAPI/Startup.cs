@@ -1,4 +1,5 @@
 using ASPNETCORE_WEBAPI.Data;
+using ASPNETCORE_WEBAPI.Formatters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,11 +9,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiContrib.Core.Formatter.Csv;
+using WebApiContrib.Core.Formatter.Protobuf;
 
 namespace ASPNETCORE_WEBAPI
 {
@@ -29,7 +33,22 @@ namespace ASPNETCORE_WEBAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers(); //WebAPI wird hier eingebunden
+
+
+            //services.AddControllers(options =>
+            //{
+            //    options.FormatterMappings
+            //        .SetMediaTypeMappingForFormat("protobuf",
+            //          MediaTypeHeaderValue.Parse("application/x-protobuf"));
+            //})
+
+            services.AddControllers(options =>
+            {
+                options.InputFormatters.Insert(0, new VCardInputFormatter());
+                options.OutputFormatters.Insert(0, new VCardOutputFormatter());
+            }) //WebAPI wird hier eingebunden
+             .AddXmlSerializerFormatters()
+             .AddCsvSerializerFormatters(); //Hinzufügen eines CSV Serializer 
 
             //OpenAPI (Konventionen) -> Swagger ist die UI, die auf Konventionen aufbaut. -> Swagger.json
             services.AddSwaggerGen(c =>
