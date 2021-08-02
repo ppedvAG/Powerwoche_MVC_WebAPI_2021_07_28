@@ -61,6 +61,7 @@ WebAPI:
 - [x] HTTP-Methoden (Get / Post / Put / Delete)
 - [ ] HTTP-Patch Befehl manuell hinzufügen
 - [x] HttpVerbs in Verbindung mit Swagger
+- [x] Return Values - Controller-Klasse
 - [ ] HttpClient
 - [x] OpenAPI-SwaggerUI-swagger.json
   - [x] Koventionsprobleme mit Swagger.json und WebAPI-Konventionen
