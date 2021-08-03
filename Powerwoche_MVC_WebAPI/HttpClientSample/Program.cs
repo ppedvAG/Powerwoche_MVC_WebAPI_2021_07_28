@@ -23,8 +23,6 @@ namespace HttpClientSample
             HttpResponseMessage response = await client.SendAsync(httpRequestMessage); //Get, POST, PUT, DELETE
             string xmlString = await response.Content.ReadAsStringAsync();
 
-            
-            
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/xml"));
             HttpResponseMessage response1  = await client.GetAsync(url);
             string resultString = await response1.Content.ReadAsStringAsync();

@@ -75,7 +75,7 @@ WebAPI:
 
 - [x] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 
-- [ ] HttpClient (30 Minuten)
+- [x] HttpClient (30 Minuten)
 - [ ] WebAPI + EFCore + MVC als Client (1 Stunde) (Json Übertragung) 
 - [ ] Content Negotation (30 Minuten)
 
