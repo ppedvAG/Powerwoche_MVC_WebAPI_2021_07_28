@@ -32,11 +32,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vorschau .NET 6_WebaPI", "V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewHostingAPIsSample", "NewHostingAPIsSample\NewHostingAPIsSample.csproj", "{9309160B-576E-4ACD-9B2F-2A991A065536}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerClientSample", "SwaggerClientSample\SwaggerClientSample.csproj", "{7C682759-6B05-4BD7-AED3-4E913E7046C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwaggerClientSample", "SwaggerClientSample\SwaggerClientSample.csproj", "{7C682759-6B05-4BD7-AED3-4E913E7046C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientSample", "HttpClientSample\HttpClientSample.csproj", "{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClientSample", "HttpClientSample\HttpClientSample.csproj", "{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPNETCORE_WEPAPI_COURSE", "ASPNETCORE_WEPAPI_COURSE", "{7BCBE2A7-16E2-4F37-9E65-3368EF92AAF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ODataApiVersion", "..\ODataApiVersion\ODataApiVersion\ODataApiVersion.csproj", "{2230C9AA-CBAF-45EF-8621-4CC29A6FF2CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQLSample", "GraphQLSample\GraphQLSample.csproj", "{578D5B08-4F34-4041-8E4C-941C777E4FF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +92,14 @@ Global
 		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2230C9AA-CBAF-45EF-8621-4CC29A6FF2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2230C9AA-CBAF-45EF-8621-4CC29A6FF2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2230C9AA-CBAF-45EF-8621-4CC29A6FF2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2230C9AA-CBAF-45EF-8621-4CC29A6FF2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578D5B08-4F34-4041-8E4C-941C777E4FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578D5B08-4F34-4041-8E4C-941C777E4FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578D5B08-4F34-4041-8E4C-941C777E4FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578D5B08-4F34-4041-8E4C-941C777E4FF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
