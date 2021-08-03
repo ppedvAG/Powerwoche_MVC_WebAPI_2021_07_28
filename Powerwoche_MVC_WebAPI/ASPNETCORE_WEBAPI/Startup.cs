@@ -53,7 +53,7 @@ namespace ASPNETCORE_WEBAPI
                 options.InputFormatters.Insert(1, GetJsonPatchInputFormatter());
 
             }) //WebAPI wird hier eingebunden
-             //.AddXmlSerializerFormatters()
+             .AddXmlSerializerFormatters()
              .AddCsvSerializerFormatters() //Hinzufügen eines CSV Serializer 
              .AddNewtonsoftJson();
 

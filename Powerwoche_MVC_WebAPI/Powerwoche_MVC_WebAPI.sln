@@ -34,6 +34,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewHostingAPIsSample", "New
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwaggerClientSample", "SwaggerClientSample\SwaggerClientSample.csproj", "{7C682759-6B05-4BD7-AED3-4E913E7046C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientSample", "HttpClientSample\HttpClientSample.csproj", "{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,10 @@ Global
 		{7C682759-6B05-4BD7-AED3-4E913E7046C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C682759-6B05-4BD7-AED3-4E913E7046C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C682759-6B05-4BD7-AED3-4E913E7046C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB16141-8D1B-4A5F-8CDF-F4C0F9BDCF9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

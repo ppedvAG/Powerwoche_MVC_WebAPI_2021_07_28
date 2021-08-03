@@ -33,7 +33,7 @@ namespace ASPNETCORE_WEBAPI.Controllers
         /// [HttpGet("GetAll")] -> GetAll, gilt als Alias um eine doppelte Get-Belegung auf einer URL zu vermeiden. 
         /// </summary>
         /// <returns></returns>
-        [HttpGet("[controller]/GetAll")]
+        [HttpGet("GetAll")]
         public List<Movie> GetAll()
         {
             return _ctx.Movies.ToList();

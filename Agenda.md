@@ -73,17 +73,16 @@ WebAPI:
 - [x] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
 
 
-- [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
+- [x] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 
-- [ ] HttpClient
-- [ ] Content Negotation
+- [ ] HttpClient (30 Minuten)
+- [ ] WebAPI + EFCore + MVC als Client (1 Stunde) (Json Übertragung) 
+- [ ] Content Negotation (30 Minuten)
+
+- [ ] ODATA 8 (beta)  -> Beispiel Odata-Service Implementierung.  (30-45)
+- [ ] Architekturen -> Hateoas + DataShapping + OData + GraphQL (30 Minuten oder) 
 
 
-
-- [ ] ODATA 8 (beta)  -> Beispiel Odata-Service Implementierung. 
-- [ ] Architekturen -> Hateoas + DataShapping + OData + GraphQL
-
-- [ ] WebAPI + EFCore + MVC als Client
 
 
 
