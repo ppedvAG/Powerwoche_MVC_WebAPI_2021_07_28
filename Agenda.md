@@ -68,12 +68,14 @@ WebAPI:
 - [ ] Migration von MVC & WebAPI von 4.8 auf ASP.NET Core
 
 - [x] HTTP-Patch Befehl manuell hinzufügen
-- [ ] Datei übertragn mit WebAPI
-- [ ] Broadcast Videoübertragung via WebAPI
-- [ ] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
+- [x] Datei übertragn mit WebAPI
+- [x] Broadcast Videoübertragung via WebAPI
+- [x] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
+
+
+- [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 
 - [ ] HttpClient
-- [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 - [ ] Content Negotation
 
 

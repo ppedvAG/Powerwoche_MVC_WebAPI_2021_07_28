@@ -2,6 +2,7 @@
 using ASPNETCORE_WEBAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,14 @@ namespace ASPNETCORE_WEBAPI.Controllers
         {
             return _ctx.Movies.ToList();
         }
+
+        [HttpGet("GetMoviesWithPagging/{pagingNumber}/{pagingSize}")]
+        public async Task<ActionResult<IEnumerable<Movie>>> GetMoviesWithPagging(int pagingNumber, int pagingSize)
+        {
+            List<Movie> result = await _ctx.Movies.Skip((pagingNumber - 1) * pagingSize).Take(pagingSize).ToListAsync();
+            return result;
+        }
+
 
         [HttpGet("AllComedyMovies")] //-> AllComedyMovies, gilt als Alias um eine doppelte Get-Belegung auf einer URL zu vermeiden.
         public List<Movie> GetAllComeyMovies()
