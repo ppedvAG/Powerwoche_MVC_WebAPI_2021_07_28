@@ -67,13 +67,16 @@ WebAPI:
 - [x] Customize Formatter (VCARD)
 - [ ] Migration von MVC & WebAPI von 4.8 auf ASP.NET Core
 
-- [ ] HTTP-Patch Befehl manuell hinzufügen
+- [x] HTTP-Patch Befehl manuell hinzufügen
+- [ ] Datei übertragn mit WebAPI
+- [ ] Broadcast Videoübertragung via WebAPI
+- [ ] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
+
 - [ ] HttpClient
 - [ ] Client mit Swagger.json (Aktuell kann es zu Bugs in VS kommen)
 - [ ] Content Negotation
-- [ ] Datei übertragn mit WebAPI?
-- [ ] Broadcast Videoübertragung via WebAPI
-- [ ] Pagging u. weitere WebAPI Features -> Skip/Take für PAging / Sorting und Filtering
+
+
 
 - [ ] ODATA 8 (beta)  -> Beispiel Odata-Service Implementierung. 
 - [ ] Architekturen -> Hateoas + DataShapping + OData + GraphQL

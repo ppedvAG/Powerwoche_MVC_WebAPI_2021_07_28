@@ -1,14 +1,17 @@
 using ASPNETCORE_WEBAPI.Data;
 using ASPNETCORE_WEBAPI.Formatters;
+using ASPNETCORE_WEBAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 using System;
@@ -46,9 +49,14 @@ namespace ASPNETCORE_WEBAPI
             {
                 options.InputFormatters.Insert(0, new VCardInputFormatter());
                 options.OutputFormatters.Insert(0, new VCardOutputFormatter());
+
+                options.InputFormatters.Insert(1, GetJsonPatchInputFormatter());
+
             }) //WebAPI wird hier eingebunden
-             .AddXmlSerializerFormatters()
-             .AddCsvSerializerFormatters(); //Hinzufügen eines CSV Serializer 
+             //.AddXmlSerializerFormatters()
+             .AddCsvSerializerFormatters() //Hinzufügen eines CSV Serializer 
+             .AddNewtonsoftJson();
+
 
             //OpenAPI (Konventionen) -> Swagger ist die UI, die auf Konventionen aufbaut. -> Swagger.json
             services.AddSwaggerGen(c =>
@@ -60,6 +68,12 @@ namespace ASPNETCORE_WEBAPI
             {
                 options.UseInMemoryDatabase("MovieDB");
             });
+
+            services.AddTransient<IFileService, FileService>();
+
+
+            services.AddScoped<IVideoStreamService, VideoStreamService>();
+            services.AddHttpClient<IVideoStreamService, VideoStreamService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,6 +98,24 @@ namespace ASPNETCORE_WEBAPI
             {
                 endpoints.MapControllers(); //Endpunkt für die WebAPI - Requests 
             });
+        }
+
+
+
+        private static NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter()
+        {
+            var builder = new ServiceCollection()
+                .AddLogging()
+                .AddMvc()
+                .AddNewtonsoftJson()
+                .Services.BuildServiceProvider();
+
+            return builder
+                .GetRequiredService<IOptions<MvcOptions>>()
+                .Value
+                .InputFormatters
+                .OfType<NewtonsoftJsonPatchInputFormatter>()
+                .First();
         }
     }
 }

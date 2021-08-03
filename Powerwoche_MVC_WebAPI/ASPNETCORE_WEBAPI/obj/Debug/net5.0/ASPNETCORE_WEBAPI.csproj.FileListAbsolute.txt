@@ -42,3 +42,6 @@ C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETC
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\System.ServiceModel.Primitives.dll
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\System.ServiceModel.dll
 C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\WebApiContrib.Core.Formatter.Protobuf.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Aktueller Kurs\Powerwoche_MVC_WebAPI_2021_07_28\Powerwoche_MVC_WebAPI\ASPNETCORE_WEBAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
